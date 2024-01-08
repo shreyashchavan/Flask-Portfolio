@@ -1,5 +1,5 @@
 # Flask-Portfolio
-A Flask Portfolio built using Flask, SQLite
+A personal portfolio website built using Flask, SQLite with Admin Panel
 
 ### Includes:
 - Frontend
