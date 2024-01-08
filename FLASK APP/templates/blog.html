@@ -1,0 +1,60 @@
+{%extends 'base.html'%}
+{%block content%}
+      <article class="about  active" data-page="blog">
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+            {% for blog in files %}
+            <li class="blog-post-item">
+              <a href="{{ url_for('content', id=blog[6]) }}">
+
+                <figure class="blog-banner-box">
+                  <img src="{{ url_for('static', filename= blog[4] ) }}" alt="blog post" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Learning</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">{{ blog[2]}}</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">{{blog[6]|safe}}</h3>
+
+                  <p class="blog-text">
+                    {{blog[3][:30] |safe}}..
+                  </p>
+                </div>
+              </a>
+            </li>
+            {%endfor%}
+          </ul>
+          <br>
+          <div class="pagination">
+            <ul>
+          {% set i = 0 %}
+          {% if page > 1 %}
+          <li class="page-item"><a class="page-link" href="{{url_for('all_blog', page=i)}}">Previous</a></li>
+          {% endif %}
+          {% for i in range(1, pages+1) %}
+            {% if i == page %}
+              <li class="page-item active"><a class="page-link" href="{{ url_for('all_blog', page= i) }}">{{i}}</a></li>
+            {% else %}
+              <li class="page-item"><a class="page-link" href="{{ url_for('all_blog', page= i) }}">{{i}}</a></li>
+            {% endif %}
+          {% endfor %}
+          {% if page < pages %}
+          <li class="page-item"><a class="page-link" href="{{ url_for('all_blog', page=page+1) }}">Next</a></li>
+          {% endif %}
+        </ul>
+        </div>
+        </section>
+      </article>
+
+      {%endblock%}

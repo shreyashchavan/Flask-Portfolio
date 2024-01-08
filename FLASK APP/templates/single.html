@@ -1,0 +1,35 @@
+{%extends 'base.html'%}
+{%block content%}
+<article class="about active" data-page="blog">
+    {% for blog in content %}
+    <header>
+      <h2 class="h2 article-title">Content: </h2>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ url_for('content', id= id, _external=True) }}" target="_blank">
+        <i class="fa-brands fa-facebook"></i> Share on Facebook <i class="fa fa-share"></i><br>
+      </a>
+      <br>
+    </header>
+    <center>
+      <div class="title1">
+    <h2 > {{ blog[3] }}</h2>
+  </div>
+    <br>
+    <div class="authors">
+    <i class="fa fa-user-circle"></i> {{ blog[1] }} | 
+    <i class="fa fa-calendar"></i>  {{ blog[2] }}
+  </div>
+    <br>
+    <hr>
+<br>
+    </center>
+    <figure class="blog-banner-box">
+        <img src="{{ url_for('static', filename=blog[4] ) }}" alt="Design conferences in 2022" loading="lazy">
+    </figure>
+    <br>
+    <div class="blog-content">
+     {{ blog[0]|safe }}
+    </div>
+    {%endfor%}
+</article>
+
+{%endblock%}

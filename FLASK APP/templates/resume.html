@@ -1,0 +1,270 @@
+{%extends 'base.html'%}
+{%block content%}
+      <article class="about  active" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Sharad Institute Of Technology</h4>
+
+              <span>2019 — 2023</span>
+
+              <p class="timeline-text">
+                Bachelors degree in Computer Scienece and Engineering with overall CGPA of <span>8.9</span>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Balaji Junior College</h4>
+
+              <span>2018 — 2019</span>
+
+              <p class="timeline-text">
+                Completed my 12th boards, JEE and MHT-CET. The percentage was <span>72.77%</span>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Ichalkaranji High School</h4>
+
+              <span>2016 — 2017</span>
+
+              <p class="timeline-text">
+                Completed my 10th boards. The percentage was <span>83.88%</span>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web Developer</h4>
+              <h5><span>@LetsGorwMore</span></h5>
+
+              <span>03/2022 — 04/2022</span>
+
+              <p class="timeline-text">
+                I have designed and built two web applications from the ground up for a agency, utilizing HTML, CSS, and JavaScript. These projects required me to carefully consider the specific needs of the agency and provide appropriate solutions. In order to enhance the functionality and visual appeal of the apps, I implemented Font Awesome and custom CSS. Both projects were successfully deployed on Netlify.
+            <span><a href="https://todoixo.netlify.app/">> Link</a></span>  
+            </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">C intern</h4>
+              <h5><span>@StormSoft</span></h5>
+
+              <span>12/2019 — 01/2020</span>
+
+              <p class="timeline-text">
+                I have received training in C programming from renowned mentors in the city. Through this training, I have developed my skills in logic building and applied them to practical projects
+              </p>
+
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">C</h5>
+              </div>
+            </li>
+            <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">C++</h5>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">HTML</h5>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Object Oriented Programming</h5>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Python</h5>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Data Structures</h5>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">GitHub</h5>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">SEO</h5>
+                </div>
+              </li>
+          </ul>
+          <br>
+        </section>
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Special Links</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="{{url_for('static' ,  filename='images/icon-design.svg') }}" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Leetcode</h4>
+
+                <p class="service-item-text">
+                  <a href="https://leetcode.com/Shreyash_chavan77/">Checkout my solutions here</a>
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="{{url_for('static' , filename='images/icon-dev.svg') }}" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">GeeksForGeeks</h4>
+
+                <p class="service-item-text">
+                 <a href="https://auth.geeksforgeeks.org/user/shreyashchavan/">Problems I solved</a>
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="{{url_for('static' , filename='images/icon-app.svg') }}" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">HackerRank</h4>
+
+                <p class="service-item-text">
+                  > 4 Star in C<br>
+                  > Certified Problem Solver {Basic} 😅
+                  <a href="https://www.hackerrank.com/Shreyashchavan77">Checkout</a>
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="{{url_for('static' , filename='images/icon-photo.svg') }}" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Write</h4>
+
+                <p class="service-item-text">
+                  I share my thoughts here if I am unable to post here..
+                  <a href="https://dev.to/shreyashchavan/">Read More</a>
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Certifications</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Google Digital Garage</h4>
+              <h5><span>@Google</span></h5>
+              <p class="timeline-text">
+                Learned working of digital advertisement, working of search engine
+            <span><a href="https://todoixo.netlify.app/">> Certificate </a></span>  
+            </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SEO Specialist</h4>
+              <h5><span>@Semrush</span></h5>
+              <p class="timeline-text">
+                Certified for SEO and ranked one blog in 45 days.. Wow
+                <span><a href="https://todoixo.netlify.app/">> Certificate </a></span>
+              </p>
+
+            </li>
+          </ol>
+
+        </section>
+        
+        <button><a href= {{ file }}> Download Resume</a></button>
+
+      </article>
+      
+{%endblock%}

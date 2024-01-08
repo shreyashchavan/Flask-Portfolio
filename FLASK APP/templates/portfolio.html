@@ -1,0 +1,150 @@
+{%extends 'base.html'%}
+{%block content%}
+      <article class="about  active" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+          </ul>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://sit-movie-recommendor.herokuapp.com/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{{url_for('static' , filename='images/project-1.jpg') }}" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MovieFlex</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+              <span style="color: rgb(247, 247, 55);">Movie Recommednation System using django and SQLite3</span>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/shreyashchavan/freeairt">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{{url_for('static' , filename='images/project-2.png') }}" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">FreeAirT</h3>
+
+                <p class="project-category">Web development</p>
+              </a>
+              <span style="color: rgb(247, 247, 55);">Learning Management using Flask and SQLite3</span>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/shreyashchavan/fileair/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{{url_for('static' , filename='images/project-3.jpg') }}" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">FileAir</h3>
+
+                <p class="project-category">Web development</p>
+              </a>
+              <span style="color: rgb(247, 247, 55);">File Sharing app using Flask and SQLite3</span>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/shreyashchavan/Privateer/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{{url_for('static' , filename='images/project-4.png')}}" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Privateer</h3>
+
+                <p class="project-category">Applications</p>
+              </a>
+              <span style="color: rgb(247, 247, 55);">On-demand Download + Stream CLI tool using python </span>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/shreyashchavan/quizery">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{{url_for('static' , filename='images/project-5.png')}}" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Quizzery</h3>
+
+                <p class="project-category">Applications</p>
+              </a>
+              <span style="color: rgb(247, 247, 55);">Quiz CLI project with C++ </span>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/shreyashchavan/unistaller/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{{url_for('static' , filename='images/project-6.png') }}" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">AdvanceUni</h3>
+                <p class="project-category">Applications</p>
+              </a>
+              <span style="color: rgb(247, 247, 55);">Advance unistaller project with C++ </span>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/shreyashchavan/Online-Free-Compiler/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{{url_for('static' , filename='images/project-7.png') }}" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">online Compiler</h3>
+
+                <p class="project-category">Web development</p>
+              </a>
+              <span style="color: rgb(247, 247, 55);">Simple online comipler with third-party API </span>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+      {%endblock%}
